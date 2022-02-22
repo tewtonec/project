@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Стилизация и отправка формы</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <div class="form">
+                <form action="#" id="form" class="form__body">
+                    <h1 class="form__title">Отправка данных на почту</h1>
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Имя*</label>
+                        <input id="formName" type="text" name="name" class="form__input">     
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">E-mail*</label>
+                        <input id="formEmail" type="text" name="Email" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+                        <div class="form__lable">Правша или левша</div>
+                        <div class="options">
+                            <div class="options__item">
+                                <input  id="formRightHand" checked type="radio" value="right" name="hand" class="options__input">
+                                <label for="formRightHand" class="options__label">Правша</label>
+                            </div>
+
+                            <div class="options__item">
+                                <input id="formLeftHand" type="radio" value="left" name="hand" class="options__input">
+                                <label for="formLeftHand" class="options__label">Левша</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="formMassage" class="form__label"> Сообщение:</label>
+                        <textarea name="Massage" id="formMassage" class="form__input"></textarea>
+                    </div>
+
+                    <div class="form__item">
+                        <div class="form__label">Возраст:</div>
+                        <select name="age" id="" class="select">
+                            <option value="от 18 до 25" selected>Молод</option>
+                            <option value="от 25 до 45">Стар</option>
+                            <option value="от 45">Супер стар</option>
+                        </select>
+                    </div>
+
+                    <div class="form__item">
+                        <div class="form__label">Прилепить Фото:</div>
+                        <div class="file">
+                            <div class="file__item">
+                                <input id="formImag" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                                <div class="file__button">Выбрать</div>
+                            </div>
+                            <div class="file__preview"> </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input  id="fomAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                            <label for="fomAgreement" class="checkbox__label">Я даю свое согласие на обработку персональных данных.</label>
+                        </div>
+                    </div>
+
+                    <button class="form__button" type="submit">Отправить</button>
+
+
+
+
+                </form>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>
