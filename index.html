@@ -14,12 +14,12 @@
                     <h1 class="form__title">Отправка данных на почту</h1>
                     <div class="form__item">
                         <label for="formName" class="form__label">Имя*</label>
-                        <input id="formName" type="text" name="name" class="form__input">     
+                        <input id="formName" type="text" name="name" class="form__input _req">     
                     </div>
 
                     <div class="form__item">
                         <label for="formEmail" class="form__label">E-mail*</label>
-                        <input id="formEmail" type="text" name="Email" class="form__input">
+                        <input id="formEmail" type="text" name="Email" class="form__input _req _email">
                     </div>
 
                     <div class="form__item">
@@ -27,12 +27,12 @@
                         <div class="options">
                             <div class="options__item">
                                 <input  id="formRightHand" checked type="radio" value="right" name="hand" class="options__input">
-                                <label for="formRightHand" class="options__label">Правша</label>
+                                <label for="formRightHand" class="options__label"><span>Правша</span></label>
                             </div>
 
                             <div class="options__item">
                                 <input id="formLeftHand" type="radio" value="left" name="hand" class="options__input">
-                                <label for="formLeftHand" class="options__label">Левша</label>
+                                <label for="formLeftHand" class="options__label"><span>Левша</span></label>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                         <div class="form__label">Прилепить Фото:</div>
                         <div class="file">
                             <div class="file__item">
-                                <input id="formImag" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
                                 <div class="file__button">Выбрать</div>
                             </div>
                             <div class="file__preview"> </div>
@@ -65,8 +65,8 @@
 
                     <div class="form__item">
                         <div class="checkbox">
-                            <input  id="fomAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
-                            <label for="fomAgreement" class="checkbox__label">Я даю свое согласие на обработку персональных данных.</label>
+                            <input  id="formAgreement"  type="checkbox" name="agreement" class="checkbox__input _req" checked>
+                            <label for="formAgreement" class="checkbox__label"><span> Я даю свое согласие на обработку персональныхданных.<a href="#">Правила</a> </span></label>
                         </div>
                     </div>
 
@@ -78,6 +78,6 @@
                 </form>
             </div>
         </div>
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
